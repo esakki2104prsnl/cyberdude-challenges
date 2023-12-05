@@ -34,10 +34,6 @@ const lengthFxecSchool = Object.keys(fxecSchool).length
 console.log(lengthFxecCollege);
 console.log(lengthFxecSchool);
 
-
-// console.log("The above fxecCollege is an" + " " + typeof fxecCollege);
-
-
 // CRUD - Operation
 // Create
 fxecCollege.block = {}
@@ -50,12 +46,8 @@ console.log(fxecCollege["department"]);
 // Update
 fxecCollege["isAutonomous"] = false
 console.log(`Here we are checking an object using square bracket notation ${fxecCollege["isAutonomous"]}`);
-// fxecCollege.isAutonomous = true
-// console.log(`Here we are checking an object using dot notation ${fxecCollege.isAutonomous}`);
 
 // Delete
 delete fxecCollege.department;
 console.log(fxecCollege.department);
 console.log(fxecCollege);
-
-// console.log(fxecCollege.collegeName.slice(1, 10));

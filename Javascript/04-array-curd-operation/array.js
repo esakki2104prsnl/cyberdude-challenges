@@ -1,7 +1,6 @@
 // 24/11/2023 - Create a primitive & reference array
 
 // Primitive ARRAY
-
 const material = ["iron", "copper", "silver", "gold"]
 
 console.log(material);
@@ -17,10 +16,7 @@ console.log(push);
 console.log(material);
 
 console.log(material.unshift("Steel"));
-console.log(material);
 
-
-console.log(material);
 console.log(material.pop());
 
 console.log(material.shift());

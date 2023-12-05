@@ -1,4 +1,4 @@
-# Array CRUD Operation (Javascript Challenge)
+# Loops (Javascript Challenge)
 
 This challenge is part of free internship (Fullstack Engineer) offered by [CyberDude Networks Pvt. Ltd.](https://cyberdudenetworks.com) You can find all the source code and live links below.
 
@@ -26,7 +26,7 @@ console.log("Gold is avaliable in this material array " + includes);
 // Referance ARRAY
 
 const homeVegs = [
-     { id: 1, vegName: "Beetroot", quanity: "250g" },
+    { id: 1, vegName: "Beetroot", quanity: "250g" },
     { id: 2, vegName: "carrot", quanity: "1kg" },
     { id: 3, vegName: "brinjal", quanity: "500g" },
     { id: 4, vegName: "onion", quanity: "500g" },
@@ -48,4 +48,4 @@ Deploy it and put the link here.
 
 ## References:
 
-[![Array CRUD Operation review](https://i.ytimg.com/vi/-_8fbcy-TKY/maxresdefault.jpg)](http://www.youtube.com/watch?v=4SAETZ1ojbQ "Array CRUD Operation review Cyberdude youtube Live")
+[![Loops review](https://i.ytimg.com/vi/-_8fbcy-TKY/maxresdefault.jpg)](http://www.youtube.com/watch?v=4SAETZ1ojbQ "Loops review Cyberdude youtube Live")

@@ -2,10 +2,10 @@
 
 This challenge is part of free internship (Fullstack Engineer) offered by [CyberDude Networks Pvt. Ltd.](https://cyberdudenetworks.com) You can find all the source code and live links below.
 
-> Task #1: Create a switch case with all possible conditions
+> Task #1-> sub-division 2: Create a switch case with all possible conditions
 
 ```
-// Switch Case 
+// Switch Case
 
 const userName = prompt("Enter your name")
 const times = new Date().getHours();
@@ -32,7 +32,4 @@ Deploy it and put the link update soon
 
 ## References:
 
-
-[![If else code review](https://i.ytimg.com/vi/-_8fbcy-TKY/maxresdefault.jpg)](http://www.youtube.com/watch?v=-_8fbcy-TKY "If else code review Cyberdude youtube Live")
-
-
+[![Switch Case code review](https://i.ytimg.com/vi/-_8fbcy-TKY/maxresdefault.jpg)](http://www.youtube.com/watch?v=-_8fbcy-TKY "Switch Case code review Cyberdude youtube Live")

@@ -1,10 +1,4 @@
-# Defending Function (Javascript Challenge)
-
-This challenge is part of free internship (Fullstack Engineer) offered by [CyberDude Networks Pvt. Ltd.](https://cyberdudenetworks.com) You can find all the source code and live links below.
-
-> Task #4: Create different ways of defining functions and explain it in detail with examples possible conditions
-
-```
+//Array of Object to hold internStudents, sources, citaitons and years
 const internStudents = [
     {
         internName: "Esakki M",
@@ -87,13 +81,12 @@ const internStudents = [
     }
 ];
 
-
-// console.log(Math.random());
-// console.log((internStudents.length));
-// console.log(Math.floor(Math.random()));
-// console.log(Math.floor(Math.random() * (internStudents.length)));
-// const randomNumber = Math.floor(Math.random() * (internStudents.length));
-// console.log(internStudents[randomNumber]);
+console.log(Math.random());
+console.log((internStudents.length));
+console.log(Math.floor(Math.random()));
+console.log(Math.floor(Math.random() * (internStudents.length)));
+const randomNumber = Math.floor(Math.random() * (internStudents.length));
+console.log(internStudents[randomNumber]);
 
 //Function to randomly select a internName value and return a random name object from the internStudents array
 function getRandomName() {
@@ -102,31 +95,14 @@ function getRandomName() {
     return randomName;
 }
 
-
 function printName() {
     const internStudents = getRandomName();
     const quoteString = `
-    Students Name: "${internStudents.internName}"
+    Students Name: "${internStudents.internName}" 
         Designation:${internStudents.designation}
-        Year:  ${internStudents.year}
+        Year:  ${internStudents.year} 
         ` ;
 
     console.log(quoteString);
 }
-
 printName();
-
-// setInterval() - Method
-setInterval(function () {
-printQuote();
-}, 10000);
-
-```
-
-### Live link ->
-
-Deploy it and put the link here.
-
-## References:
-
-[![Defending Function review](https://i.ytimg.com/vi/-_8fbcy-TKY/maxresdefault.jpg)](http://www.youtube.com/watch?v=4SAETZ1ojbQ "Defending Function review Cyberdude youtube Live")
