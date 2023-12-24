@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberDude Network || Appointment Form</title>
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body class="bg-orange-600">
+  <header class="flex justify-center items-center">
+    <a href="http://www.cyberdudenetworks.com/" target="_blank" rel="noopener noreferrer">
+      <img src="./assets/img/cyberdude-logo.png" alt="cdn-logo" class=" w-72 h-36 object-contain">
+    </a>
+    <section class="text-center">
+      <h1 class="font-semibold mb-2">Schedule an Appointment</h1>
+      <a href="https://www.cyberdudenetworks.com/"
+        class="text-gray-100 font-thin p-2 hover:text-black hover:bg-slate-100 hover:p-2 hover:rounded-md">CyberDude
+        Networks Pvt. Ltd.</a>
+    </section>
+  </header>
+  <main class="mx-20">
+    <section>
+      <div class="text-5xl font-bold p-2">
+        Book an Appointment
+      </div>
+      <p class="pl-3"> at CyberDude Networks Pvt. Ltd. by filling the form below. Our representative will
+        get back to you at the earliest.</p>
+    </section>
+
+    <form class="max-w-xl mx-auto my-4 text-sm bg-slate-500 rounded p-2">
+      <table>
+        <tr>
+          <td class="td-class">
+            <label for="fullName" class="form-label">Name :</label>
+          </td>
+          <td class="td-class">
+            <input type="text" name="name" id="fullName" class="form-input" placeholder="Enter your name">
+          </td>
+        </tr>
+        <tr>
+          <td class="td-class">
+            <label for="email" class="form-label text-right">E-Mail :</label>
+          </td>
+          <td class="td-class">
+            <input type="email" name="email" id="email" class="form-input" placeholder="test@mail.com">
+          </td>
+        </tr>
+        <tr>
+          <td class="td-class">
+            <label for="phone" class="form-label">Contact :</label>
+          </td>
+          <td class="td-class">
+            <input type="tel" name="contact-no" id="phone" class="form-input" placeholder="Enter your number">
+          </td>
+        </tr>
+        <tr>
+          <td class="td-class">
+            <label for="person" class="form-label">Schedule an Appointment to:</label>
+          </td>
+          <td class="td-class">
+            <select name="perosn" id="person" class="form-input">
+              <option value="--selectd--">--selectd by option--</option>
+              <option value="ceo-anbu-selvan">CEO Anbu Selvan</option>
+              <option value="cto-abishek">CTO Abishek P</option>
+              <option value="digital-marketing">Digital Marketingt Person</option>
+              <option value="hr">Human Resources</option>
+            </select>
+
+          </td>
+        </tr>
+        <tr>
+          <td class="td-class">
+            <label for="time" class="form-label text-right">Time :</label>
+          </td>
+          <td class="td-class">
+            <input type="time" name="time" id="time" class="form-input">
+          </td>
+        </tr>
+        <tr>
+          <td class="td-class">
+            <label for="date" class="form-label text-right">Date :</label>
+          </td>
+          <td class="td-class">
+            <input type="date" name="date" id="date" class="form-input" min="">
+          </td>
+        </tr>
+      </table>
+
+      <div class="text-center">
+        <button type="submit" class="bg-orange-500 p-2 rounded-md hover:w-96 hover:bg-orange-600">Make an
+          Appointment</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>

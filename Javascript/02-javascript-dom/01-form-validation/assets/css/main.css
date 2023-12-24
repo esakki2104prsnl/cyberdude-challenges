@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input {
+  @apply rounded font-thin p-2 w-80;
+}
+
+.form-label {
+  @apply p-2 font-semibold;
+}
+
+.td-class{
+    @apply w-full p-2
+}
