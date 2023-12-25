@@ -7,7 +7,7 @@
 }
 
 .form-label {
-  @apply p-2 font-semibold;
+  @apply p-2 font-semibold text-base;
 }
 
 .td-class {

@@ -1,11 +1,22 @@
 import JustValidate from "just-validate";
 
 const appointmentFormEl = document.getElementById("appointmentForm");
+const sectionEl = document.getElementById("section");
+const responseEl = document.getElementById("response");
 
-console.log(appointmentFormEl);
-const validateForm = new JustValidate(appointmentFormEl);
 
-validateForm.addField("#fullName",
+const formData = new FormData(appointmentFormEl);
+const formObj = Object.fromEntries(formData.entries());
+const newAppoinmentData = [];
+
+const localStorageKey = "appoinmentData";
+
+const validateForm = new JustValidate(appointmentFormEl, {
+    validateBeforeSubmitting: true,
+});
+
+validateForm.addField(
+    "#fullName",
     [
         { rule: "required" },
         { rule: "minLength", value: 3 },
@@ -13,64 +24,141 @@ validateForm.addField("#fullName",
     ],
     {
         errorLabelCssClass: ["error-label"],
-    },
+    }
 );
 
-validateForm.addField('#email', [
+validateForm.addField(
+    "#email",
+    [
+        {
+            rule: "required",
+        },
+        {
+            rule: "email",
+        },
+    ],
     {
-        rule: 'required',
-    },
-    {
-        rule: 'email',
-    },
-], {
-    errorLabelCssClass: ["error-label"],
-},
+        errorLabelCssClass: ["error-label"],
+    }
 );
 
-validateForm.addField('#mobile-no', [
+validateForm.addField(
+    "#mobile-no",
+    [
+        {
+            rule: "required",
+        },
+        {
+            rule: "number",
+        },
+        {
+            rule: "minNumber",
+            value: 10,
+        },
+    ],
     {
-        rule: 'required',
-    },
-    {
-        rule: 'number',
-    },
-    {
-        rule: "maxNumber",
-        value: 10
-    },
-], {
-    errorLabelCssClass: ["error-label"],
-},
+        errorLabelCssClass: ["error-label"],
+    }
 );
 
-validateForm.addField('#person', [
+validateForm.addField(
+    "#person",
+    [
+        {
+            rule: "required",
+        },
+    ],
     {
-        rule: 'required',
-    },
-], {
-    errorLabelCssClass: ["error-label"],
-},
-)
+        errorLabelCssClass: ["error-label"],
+    }
+);
 
-validateForm.addField("#time", [
+validateForm.addField(
+    "#time",
+    [
+        {
+            rule: "required",
+        },
+    ],
     {
-        rule: 'required',
-    },
-], {
-    errorLabelCssClass: ["error-label"],
-},
-)
+        errorLabelCssClass: ["error-label"],
+    }
+);
 
-validateForm.addField("#date", [
+validateForm.addField(
+    "#date",
+    [
+        {
+            rule: "required",
+        },
+    ],
     {
-        rule: 'required',
-    },
-], {
-    errorLabelCssClass: ["error-label"],
-},
-)
+        errorLabelCssClass: ["error-label"],
+    }
+);
 
+// function validateDateOfAppointment() {
+//     var date = formObj.date
+//     var d = new Date();
+//     var x = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+//     console.log(d.getDate());
+//     var checkDate = date.substr(8, 2);
+//     var equalDate = d.getDate();
+//     console.log(checkDate, equalDate);
+//     var checkMonth = date.substr(5, 2);
+//     var equalMonth = d.getMonth();
+//     console.log(checkMonth, equalMonth);
+//     var checkYear = date.substr(0, 4);
+//     var equalYear = d.getFullYear();
+//     console.log(checkYear, equalYear);
+
+//     if (checkMonth >= equalMonth) {
+//         if (checkDate < equalDate) {
+//             alert("Date cannot be less than today!! ");
+//             return false;
+//         }
+//     }
+//     else if (checkMonth < equalMonth) {
+//         if (checkYear < equalYear) {
+//             alert("Date cannot be less than today!! ");
+//             return false;
+//         }
+//     }
+// }
+// validateDateOfAppointment()
+
+
+validateForm.onSuccess(() => {
+    // Get existing localStorage value
+    const existingAppoinmentData = localStorage.getItem(localStorageKey);
+
+    // String into JS value
+    const existingAppoinmentArray = JSON.parse(existingAppoinmentData);
+    if (existingAppoinmentArray) {
+        existingAppoinmentArray.push(formObj);
+        localStorage.setItem(
+            localStorageKey,
+            JSON.stringify(existingAppoinmentArray)
+        );
+    } else {
+        newAppoinmentData.push(formObj);
+        localStorage.setItem(localStorageKey, JSON.stringify(newAppoinmentData));
+    }
+
+    alert(`Dear ${formObj.name}, 
+  Your Appointment form submitted successfully✔  `);
+
+    // Rendering UI
+    sectionEl.style.display = "block";
+    responseEl.style.display = "block";
+    const response = (` Full Name : ${formObj.name},
+  Appoinment to : ${formObj.person}
+  Appointment Date and Time : ${formObj.date} & ${formObj.time}
+  `);
+    responseEl.innerText = response;
+
+    appointmentFormEl.reset();
+});
 
 
 
