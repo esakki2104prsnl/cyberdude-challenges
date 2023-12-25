@@ -5,10 +5,6 @@ const sectionEl = document.getElementById("section");
 const responseEl = document.getElementById("response");
 
 
-const formData = new FormData(appointmentFormEl);
-const formObj = Object.fromEntries(formData.entries());
-const newAppoinmentData = [];
-
 const localStorageKey = "appoinmentData";
 
 const validateForm = new JustValidate(appointmentFormEl, {
@@ -129,6 +125,9 @@ validateForm.addField(
 
 
 validateForm.onSuccess(() => {
+    const formData = new FormData(appointmentFormEl);
+    const formObj = Object.fromEntries(formData.entries());
+    const newAppoinmentData = [];
     // Get existing localStorage value
     const existingAppoinmentData = localStorage.getItem(localStorageKey);
 
