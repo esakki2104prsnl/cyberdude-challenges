@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 .form-input {
-  @apply rounded font-thin p-2 w-80;
+  @apply rounded font-thin p-2 w-80 outline-none;
 }
 
 .form-label {
   @apply p-2 font-semibold;
 }
 
-.td-class{
-    @apply w-full p-2
+.td-class {
+  @apply w-full p-2;
+}
+
+/* JS */
+.error-label {
+  @apply text-sm font-bold;
 }
