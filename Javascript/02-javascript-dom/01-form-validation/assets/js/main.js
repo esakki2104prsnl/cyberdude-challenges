@@ -2,7 +2,6 @@ import JustValidate from "just-validate";
 
 const appointmentFormEl = document.getElementById("appointmentForm");
 const sectionEl = document.getElementById("section");
-const responseEl = document.getElementById("response");
 
 
 const localStorageKey = "appoinmentData";
@@ -148,16 +147,34 @@ validateForm.onSuccess(() => {
   Your Appointment form submitted successfully✔  `);
 
     // Rendering UI
+
     sectionEl.style.display = "block";
-    responseEl.style.display = "block";
-    const response = (` Full Name : ${formObj.name},
-  Appoinment to : ${formObj.person}
-  Appointment Date and Time : ${formObj.date} & ${formObj.time}
-  `);
-    responseEl.innerText = response;
+
+    const createDivEl = document.createElement("div")
+
+    createDivEl.classList.add("p-2", "my-2", "text-md", "border", "font-semibold", "bg-orange-600", "rounded-md");
+
+
+    sectionEl.append(createDivEl)
+
+
+
+    createDivEl.innerText = ` Full Name : ${formObj.name},
+    Appoinment to : ${formObj.person}
+    Appointment Date and Time : ${formObj.date} & ${formObj.time}
+    `
+
+    //     const response = (` Full Name : ${formObj.name},
+    //   Appoinment to : ${formObj.person}
+    //   Appointment Date and Time : ${formObj.date} & ${formObj.time}
+    //   `);
+    // responseEl.innerText = response;
 
     appointmentFormEl.reset();
 });
+
+
+
 
 
 
