@@ -164,11 +164,6 @@ validateForm.onSuccess(() => {
     Appointment Date and Time : ${formObj.date} & ${formObj.time}
     `
 
-    //     const response = (` Full Name : ${formObj.name},
-    //   Appoinment to : ${formObj.person}
-    //   Appointment Date and Time : ${formObj.date} & ${formObj.time}
-    //   `);
-    // responseEl.innerText = response;
 
     appointmentFormEl.reset();
 });
@@ -184,3 +179,4 @@ const phoneInput = window.intlTelInput(phoneInputField, {
     utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
+
