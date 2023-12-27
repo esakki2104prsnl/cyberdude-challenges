@@ -93,18 +93,18 @@ validateForm.addField(
 );
 
 // function validateDateOfAppointment() {
-//     var date = formObj.date
-//     var d = new Date();
-//     var x = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+//     let date = formObj.date
+//     let d = new Date();
+//     let x = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
 //     console.log(d.getDate());
-//     var checkDate = date.substr(8, 2);
-//     var equalDate = d.getDate();
+//     let checkDate = date.substr(8, 2);
+//     let equalDate = d.getDate();
 //     console.log(checkDate, equalDate);
-//     var checkMonth = date.substr(5, 2);
-//     var equalMonth = d.getMonth();
+//     let checkMonth = date.substr(5, 2);
+//     let equalMonth = d.getMonth();
 //     console.log(checkMonth, equalMonth);
-//     var checkYear = date.substr(0, 4);
-//     var equalYear = d.getFullYear();
+//     let checkYear = date.substr(0, 4);
+//     let equalYear = d.getFullYear();
 //     console.log(checkYear, equalYear);
 
 //     if (checkMonth >= equalMonth) {
@@ -127,11 +127,13 @@ validateForm.onSuccess(() => {
     const formData = new FormData(appointmentFormEl);
     const formObj = Object.fromEntries(formData.entries());
     const newAppoinmentData = [];
+
     // Get existing localStorage value
     const existingAppoinmentData = localStorage.getItem(localStorageKey);
 
     // String into JS value
     const existingAppoinmentArray = JSON.parse(existingAppoinmentData);
+
     if (existingAppoinmentArray) {
         existingAppoinmentArray.push(formObj);
         localStorage.setItem(
@@ -152,24 +154,16 @@ validateForm.onSuccess(() => {
 
     const createDivEl = document.createElement("div")
 
-    createDivEl.classList.add("p-2", "my-2", "text-md", "border", "font-semibold", "bg-orange-600", "rounded-md");
-
-
+    createDivEl.classList.add("p-3", "max-w-xl", "mx-auto", "my-3", "text-md", "border", "font-semibold", "bg-orange-400", "text-black", "rounded-md");
     sectionEl.append(createDivEl)
-
-
 
     createDivEl.innerText = ` Full Name : ${formObj.name},
     Appoinment to : ${formObj.person}
     Appointment Date and Time : ${formObj.date} & ${formObj.time}
     `
 
-
     appointmentFormEl.reset();
 });
-
-
-
 
 
 
