@@ -10,3 +10,11 @@
 .error-label {
   @apply p-1 text-sm font-bold;
 }
+
+.table-data {
+  @apply p-2 border;
+}
+
+.table-data-delete {
+  @apply p-2 border bg-red-600 rounded-md cursor-pointer;
+}
