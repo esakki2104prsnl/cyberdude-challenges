@@ -174,12 +174,6 @@ userDataEl.addEventListener("submit", () => {
         tdEl3.classList.add("table-data")
 
 
-        // <div class="flex justify-center items-center">
-        //                 
-        //               </div>
-
-        // const tdAppendedDivEl = tdEl4.append(divEl)
-
         tdEl4.innerHTML = `<div class="m-1 flex items-center justify-center ">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ Special Thanks to [Mr. Anbuselvan Rocky](https://instagram.com/anbuselvanrocky)
 
 ## Demo Link
 
-<a target="_blank" href="https://esakki2104prsnl.github.io/cyberdude-challenges/Javascript/02-javascript-dom/01-form-validation/dist/">`Live Link🚀`</a>
+<a target="_blank" href="https://esakki2104prsnl.github.io/cyberdude-challenges/Javascript/02-javascript-dom/02-form-localstorage/dist/">`Live Link🚀`</a>
 
 ### Internship
 
