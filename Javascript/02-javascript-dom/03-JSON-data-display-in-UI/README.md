@@ -1,22 +1,14 @@
 # Collect data from JSON File
 
-Write app description in detail!
+Data were stored in index.josn file and plug the data from that file and show case in my UI
 
 #### Screenshots
 
 ![ScreenShot](https://github.com/esakki2104prsnl/cyberdude-challenges/blob/master/Javascript/02-javascript-dom/03-JSON-data-display-in-UI/assets/img/json-output.png)
 
-## 🎉 Check it yourself!
+#### Live
 
-| 🚧 Build Status  | [![Netlify Status](https://img.shields.io/github/actions/workflow/status/anburocky3/festival-greeting-app/deploy.yml?logo=github&label=Live)](https://app.netlify.com/sites/cyberdude-internship/deploys) |
-| ---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ✅ Live Website: | https://anburocky3.github.io/vite-html-tailwind                                                                                                                                                           |
-
----
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/anburocky3/vite-html-tailwind/generate).
+[LiveLink](https://esakki2104prsnl.github.io/cyberdude-challenges/blob/master/Javascript/02-javascript-dom/03-JSON-data-display-in-UI/dist)
 
 ### Clone to local
 
@@ -37,8 +29,6 @@ When you use this template, try follow the checklist to update your info properl
 - [x] According to your usage, modify READMEs
 
 And, enjoy :)
-
-## Usage
 
 ### Development
 
