@@ -1,10 +1,10 @@
-# Your App Title
+# Collect data from JSON File
 
 Write app description in detail!
 
 #### Screenshots
 
-[Yet to be uploaded]
+![ScreenShot](https://github.com/esakki2104prsnl/cyberdude-challenges/blob/master/Javascript/02-javascript-dom/03-JSON-data-display-in-UI/assets/img/json-output.png)
 
 ## 🎉 Check it yourself!
 
@@ -32,9 +32,9 @@ npm install # Install dependencies
 
 When you use this template, try follow the checklist to update your info properly
 
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title and unnecessary info in `index.html`
-- [ ] According to your usage, modify READMEs
+- [x] Change the author name in `LICENSE`
+- [x] Change the title and unnecessary info in `index.html`
+- [x] According to your usage, modify READMEs
 
 And, enjoy :)
 
@@ -70,6 +70,4 @@ npm run preview
 
 #### Authors:
 
-- [Anbuselvan Rocky](https://fb.me/anburocky3)
-
-[![Deploy to GH Pages](https://github.com/anburocky3/vite-html-tailwind/actions/workflows/deploy.yml/badge.svg)](https://github.com/anburocky3/vite-html-tailwind/actions/workflows/deploy.yml)
+- [Esakki M](https://instagram.com/vj._.sabari._.2oo2)
