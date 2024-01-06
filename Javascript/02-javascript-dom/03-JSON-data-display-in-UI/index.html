@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Data Display in UI</title>
+
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body class="bg-slate-500">
+    <!-- Write your HTML here -->
+    <div class="text-3xl font-bold p-3 text-center m-5">
+      JSON Data's Displayed in My UI
+    </div>
+
+    <ul id="ulList" class="m-5">
+      <!--  Sample Li  -->
+      <li class="bg-gray-400 flex rounded-md p-2">
+        <img
+          src="https://i.dummyjson.com/data/products/18/thumbnail.jpg"
+          alt=""
+          srcset=""
+          class="w-40 h-30"
+        />
+        <div class="p-3 font-semibold text-xl flex flex-1 flex-col">
+          Oil Free Moisturizer 100ml
+          <span class="text-sm">
+            Indulge in comfort and style with our Women's Wool Sweaters. Crafted
+            with quality wool, these sweaters offer warmth without sacrificing
+            fashion. Elevate your winter wardrobe with cozy elegance.</span
+          >
+          <span class="bg-red-600 text-white p-2 w-fit rounded">10% off</span>
+          <span class="text-[#AAFF00] text-2xl font-bold">₹ 100</span>
+        </div>
+      </li>
+    </ul>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
