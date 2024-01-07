@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.li-card {
+  @apply bg-gray-400 flex rounded-md p-2 m-2;
+}
+
+.div-class {
+  @apply p-2 font-semibold text-xl flex flex-1 flex-col;
+}
+
+.span1 {
+  @apply text-sm;
+}
+
+.span2 {
+  @apply bg-red-600 text-white p-1 m-1 w-fit rounded;
+}
+
+.span3 {
+  @apply text-[#00ff1acd] bg-slate-800 m-1 rounded-lg p-1 w-fit text-2xl font-bold;
+}
