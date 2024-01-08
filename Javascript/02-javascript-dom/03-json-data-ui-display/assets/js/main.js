@@ -1,4 +1,4 @@
-import data from "../../data/data.json"
+import data from "./data.json"
 
 // loop JSON data file 
 data.forEach((data) => {
