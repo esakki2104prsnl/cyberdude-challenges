@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.img-class {
+  @apply w-96 h-fit mx-auto;
 }
