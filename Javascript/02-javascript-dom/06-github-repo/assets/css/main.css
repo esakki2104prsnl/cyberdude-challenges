@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main {
+  @apply h-screen px-5;
+}
+
+.h1 {
+  @apply font-bold text-3xl;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.user-card {
+  @apply p-5 flex flex-col  items-center bg-white w-[100px] sm:w-[300px]  shadow-sm hover:shadow-blue-600/50 hover:shadow-2xl rounded-lg bg-opacity-10;
+}
+.username {
+  @apply font-bold mt-5 text-xl text-blue-300;
+}
+.img {
+  @apply w-[150px] h-[150px] rounded-2xl;
+}
+.role {
+  @apply text-zinc-400  shadow-black font-medium;
+}
+.location {
+  @apply text-white font-normal text-sm;
+}
+.button-style {
+  @apply p-3 text-xs bg-blue-950 hover:bg-blue-400 hover:text-black text-white font-bold my-1 rounded-xl;
+}
