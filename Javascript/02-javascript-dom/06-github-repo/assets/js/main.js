@@ -40,6 +40,7 @@ function viewInternsProfiles(user) {
        `;
 
       //  button
+      // buttonEl.className = "flex items-center justify-center"
       buttonEl.innerHTML = `
        <button
        class="button-style"
