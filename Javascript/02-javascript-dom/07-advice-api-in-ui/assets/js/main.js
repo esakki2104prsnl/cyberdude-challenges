@@ -8,8 +8,11 @@ console.log(adviceEl);
 const adviceUrl = "https://api.adviceslip.com/advice";
 console.log(adviceUrl);
 
+
+
 refreshBtnEl.addEventListener("click", () => {
     window.location.href = "./index.html";
+
 });
 
 async function getAdviceData() {
@@ -21,13 +24,14 @@ async function getAdviceData() {
         console.error("Network went wrong", error);
     }
 }
-
-
 const adviceData = await getAdviceData()
+console.log(adviceData);
+
 
 // refreshBtnEl.className = "btn"
 adviceEl.textContent = adviceData.slip.advice
 console.log(adviceData.slip.advice);
 
+// console.log(await getAdviceData().slip.advice);
 
 refreshBtnEl.style.display = "inline-flex"
