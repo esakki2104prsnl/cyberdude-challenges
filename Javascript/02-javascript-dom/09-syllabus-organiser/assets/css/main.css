@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user-login {
+  @apply p-2 rounded-sm border-gray-900 border-l-4 hover:border-white hover:border-l-4  hover:bg-slate-700 cursor-pointer;
+}
