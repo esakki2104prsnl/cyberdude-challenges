@@ -5,3 +5,11 @@
 .user-login {
   @apply p-2 rounded-sm border-gray-900 border-l-4 hover:border-white hover:border-l-4  hover:bg-slate-700 cursor-pointer;
 }
+
+.input {
+  @apply block w-72 outline-none rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6;
+}
+
+.option-input{
+    @apply text-black
+}

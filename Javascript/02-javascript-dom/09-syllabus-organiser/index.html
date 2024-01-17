@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
-  <body class="">
-    <!-- <header class="bg-[#3040f5] fixed top-0 w-full"> -->
-    <header class="bg-gray-900 fixed top-0 w-full shadow-lg z-10">
-      <div class="flex justify-between items-center px-10 py-4">
+  <body class="bg-slate-100">
+    <header class="bg-gray-900 fixed top-0 w-full shadow-xl z-5">
+      <div class="flex justify-between items-center px-3 py-2 sm:px-10 sm:py-4">
         <a href="./">
           <nav class="flex pr-2 bg-neutral-200 rounded-md">
             <img
@@ -21,17 +20,135 @@
               class="w-fit h-14 object-cover items-center"
               alt="learning-logo"
             />
-            <h2 class="text-2xl flex items-center font-bold">YT Learning</h2>
+            <h2 class="text-lg sm:text-2xl flex items-center font-bold">
+              YT Learning
+            </h2>
           </nav>
         </a>
         <div
-          class="flex justify-center items-center gap-x-8 text-white font-semibold text-xl"
+          class="flex justify-center items-center gap-x-3 sm:gap-x-8 text-white font-semibold text-xl"
         >
           <span class="user-login">Register</span>
           <span class="user-login">Log-in</span>
         </div>
       </div>
     </header>
+
+    <main class="h-screen bg-slate-200">
+      <form>
+        <div class="flex justify-evenly pt-28 p-5">
+          <input
+            type="text"
+            name="course-title"
+            class="input"
+            placeholder="Course Title"
+            autocomplete="given-name"
+          />
+          <input
+            type="text"
+            name="course-title"
+            class="input"
+            placeholder="Course Length"
+          />
+
+          <input
+            type="url"
+            name="youtube-link"
+            class="input"
+            placeholder="Enter channel link"
+          />
+        </div>
+
+        <div class="flex justify-evenly p-5">
+          <!-- Type of Content -->
+          <select
+            name="Type of Content"
+            class="input"
+            placeholder="Type of content"
+          >
+            <optgroup
+              class="text-gray-400"
+              label="--Click anyone Content below--"
+            >
+              <option value="" hidden>--Type of Content--</option>
+              <option value="video" class="option-input">VIDEO</option>
+              <option value="audio" class="option-input">AUDIO</option>
+              <option value="pdf" class="option-input">PDF</option>
+              <option value="docs" class="option-input">DOCS</option>
+              <option value="q&a" class="option-input">Q&A</option>
+            </optgroup>
+          </select>
+
+          <!-- Author -->
+          <select name="Author" class="input" placeholder="author">
+            <optgroup
+              class="text-gray-400"
+              label="--Click anyone Author below--"
+            >
+              <option value="" hidden>--Author--</option>
+              <option value="anbu-selvan" class="option-input">
+                Mr. Anbu Selvan
+              </option>
+              <option value="namsatae js" class="option-input">
+                Mr. Namsatae JavaScript
+              </option>
+              <!-- <option value="pdf" class="option-input">PDF</option>
+             <option value="docs" class="option-input">DOCS</option>
+             <option value="q&a" class="option-input">Q&A</option> -->
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="flex justify-center p-5">
+          <button
+            type="submit"
+            class="bg-green-600 w-80 p-2 rounded-md shadow-md font-semibold text-white"
+          >
+            Save Data
+          </button>
+        </div>
+      </form>
+
+      <div class="px-10">
+        <table
+          class="table-auto text-center w-full border-collapse border-black p-5"
+        >
+          <thead
+            class="font-semibold bg-stone-500 border-2 border-blue-600 p-5"
+          >
+            <tr class="border">
+              <td class="border">Sl.No</td>
+              <td class="border">Course Title</td>
+              <td class="border">Course Length</td>
+              <td class="border">Type of Content</td>
+              <td class="border">Author</td>
+              <td class="border">YT Thumbnail</td>
+              <td class="border">Actions</td>
+            </tr>
+          </thead>
+          <tbody class="border-black border-2">
+            <tr class="border">
+              <td class="border">1</td>
+              <td class="border">JavaScript</td>
+              <td class="border">2hrs</td>
+              <td class="border">Video</td>
+              <td class="border">Mr. Anbu Selvan</td>
+              <td class="border">img</td>
+              <td class="border"><button>Delete</button></td>
+            </tr>
+            <tr class="border">
+              <td class="border">1</td>
+              <td class="border">JavaScript</td>
+              <td class="border">2hrs</td>
+              <td class="border">Video</td>
+              <td class="border">Mr. Anbu Selvan</td>
+              <td class="border">img</td>
+              <td class="border"><button>Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
 
     <script type="module" src="./assets/js/main.js"></script>
   </body>
