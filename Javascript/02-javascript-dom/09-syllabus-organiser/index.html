@@ -34,72 +34,97 @@
       </div>
     </header>
 
-    <main class="h-screen bg-slate-200">
+    <main class="h-min bg-slate-200">
       <form>
-        <div class="flex justify-evenly pt-28 p-5">
-          <input
-            type="text"
-            name="course-title"
-            class="input"
-            placeholder="Course Title"
-            autocomplete="given-name"
-          />
-          <input
-            type="text"
-            name="course-title"
-            class="input"
-            placeholder="Course Length"
-          />
+        <div class="space-y-3 px-10 sm:flex sm:justify-evenly pt-28 p-5">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="course-title"
+              class="input input1"
+              id="course-title"
+              placeholder="Course Title"
+              autocomplete="given-name"
+            />
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="course-length"
+              id="course-length"
+              class="input input1"
+              placeholder="Course Length"
+            />
+          </div>
 
-          <input
-            type="url"
-            name="youtube-link"
-            class="input"
-            placeholder="Enter channel link"
-          />
+          <div class="control-wrapper">
+            <div class="input-wrapper">
+              <input
+                type="url"
+                name="youtube-link"
+                id="youtube-link"
+                class="input input1"
+                placeholder="Enter channel link"
+              />
+            </div>
+          </div>
         </div>
 
-        <div class="flex justify-evenly p-5">
-          <!-- Type of Content -->
-          <select
-            name="Type of Content"
-            class="input"
-            placeholder="Type of content"
-          >
-            <optgroup
-              class="text-gray-400"
-              label="--Click anyone Content below--"
-            >
-              <option value="" hidden>--Type of Content--</option>
-              <option value="video" class="option-input">VIDEO</option>
-              <option value="audio" class="option-input">AUDIO</option>
-              <option value="pdf" class="option-input">PDF</option>
-              <option value="docs" class="option-input">DOCS</option>
-              <option value="q&a" class="option-input">Q&A</option>
-            </optgroup>
-          </select>
+        <div class="space-y-3 px-10 sm:flex justify-evenly p-5">
+          <div class="control-wrapper">
+            <div class="input-wrapper">
+              <!-- Type of Content -->
+              <select
+                name="Type of Content"
+                class="input input1"
+                id="content"
+                placeholder="Type of content"
+              >
+                <optgroup
+                  class="text-gray-400"
+                  label="--Click anyone Content below--"
+                >
+                  <option value="" hidden>--Type of Content--</option>
+                  <option value="video" class="option-input">VIDEO</option>
+                  <option value="audio" class="option-input">AUDIO</option>
+                  <option value="pdf" class="option-input">PDF</option>
+                  <option value="docs" class="option-input">DOCS</option>
+                  <option value="q&a" class="option-input">Q&A</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
 
           <!-- Author -->
-          <select name="Author" class="input" placeholder="author">
-            <optgroup
-              class="text-gray-400"
-              label="--Click anyone Author below--"
-            >
-              <option value="" hidden>--Author--</option>
-              <option value="anbu-selvan" class="option-input">
-                Mr. Anbu Selvan
-              </option>
-              <option value="namsatae js" class="option-input">
-                Mr. Namsatae JavaScript
-              </option>
-              <!-- <option value="pdf" class="option-input">PDF</option>
+          <div class="control-wrapper">
+            <div class="input-wrapper">
+              <select
+                name="Author"
+                id="author"
+                class="input input1"
+                placeholder="author"
+              >
+                <optgroup
+                  class="text-gray-400"
+                  label="--Click anyone Author below--"
+                >
+                  <option value="" hidden>--Author--</option>
+                  <option value="anbu-selvan" class="option-input">
+                    Mr. Anbu Selvan
+                  </option>
+                  <option value="namsatae js" class="option-input">
+                    Mr. Namsatae JavaScript
+                  </option>
+                  <!-- <option value="pdf" class="option-input">PDF</option>
              <option value="docs" class="option-input">DOCS</option>
              <option value="q&a" class="option-input">Q&A</option> -->
-            </optgroup>
-          </select>
+                </optgroup>
+              </select>
+            </div>
+          </div>
         </div>
 
-        <div class="flex justify-center p-5">
+        <div class="flex justify-center sm:p-5">
           <button
             type="submit"
             class="bg-green-600 w-80 p-2 rounded-md shadow-md font-semibold text-white"
@@ -109,7 +134,7 @@
         </div>
       </form>
 
-      <div class="px-10">
+      <!-- <div class="sm:px-10">
         <table
           class="table-auto text-center w-full border-collapse border-black p-5"
         >
@@ -147,7 +172,7 @@
             </tr>
           </tbody>
         </table>
-      </div>
+      </div> -->
     </main>
 
     <script type="module" src="./assets/js/main.js"></script>
