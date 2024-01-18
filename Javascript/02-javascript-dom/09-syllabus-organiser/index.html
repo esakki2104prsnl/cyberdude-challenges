@@ -36,28 +36,36 @@
 
     <main class="h-min bg-slate-200">
       <form>
-        <div class="space-y-3 px-10 sm:flex sm:justify-evenly pt-28 p-5">
-          <div class="input-wrapper">
-            <input
-              type="text"
-              name="course-title"
-              class="input input1"
-              id="course-title"
-              placeholder="Course Title"
-              autocomplete="given-name"
-            />
-          </div>
-          <div class="input-wrapper">
-            <input
-              type="text"
-              name="course-length"
-              id="course-length"
-              class="input input1"
-              placeholder="Course Length"
-            />
+        <div
+          class="px-10 sm:flex sm:justify-evenly sm:items-center pt-20 sm:pt-28 sm:p-5"
+        >
+          <div class="control-wrapper py-2">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="course-title"
+                class="input input1"
+                id="course-title"
+                placeholder="Course Title"
+                autocomplete="given-name"
+              />
+            </div>
           </div>
 
-          <div class="control-wrapper">
+          <div class="control-wrapper py-2" style="margin-top: 0">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="course-length"
+                id="course-length"
+                class="input input1"
+                placeholder="Course Length (Ex:5:48)"
+                min="0"
+              />
+            </div>
+          </div>
+
+          <div class="control-wrapper py-2" style="margin-top: 0">
             <div class="input-wrapper">
               <input
                 type="url"
@@ -70,12 +78,12 @@
           </div>
         </div>
 
-        <div class="space-y-3 px-10 sm:flex justify-evenly p-5">
-          <div class="control-wrapper">
+        <div class="px-10 sm:flex sm:justify-evenly sm:items-center sm:p-5">
+          <div class="control-wrapper py-2">
             <div class="input-wrapper">
               <!-- Type of Content -->
               <select
-                name="Type of Content"
+                name="type of content"
                 class="input input1"
                 id="content"
                 placeholder="Type of content"
@@ -96,10 +104,10 @@
           </div>
 
           <!-- Author -->
-          <div class="control-wrapper">
+          <div class="control-wrapper py-2" style="margin-top: 0">
             <div class="input-wrapper">
               <select
-                name="Author"
+                name="author"
                 id="author"
                 class="input input1"
                 placeholder="author"
@@ -124,7 +132,7 @@
           </div>
         </div>
 
-        <div class="flex justify-center sm:p-5">
+        <div class="flex justify-center py-2 sm:p-5">
           <button
             type="submit"
             class="bg-green-600 w-80 p-2 rounded-md shadow-md font-semibold text-white"
@@ -134,14 +142,12 @@
         </div>
       </form>
 
-      <!-- <div class="sm:px-10">
-        <table
-          class="table-auto text-center w-full border-collapse border-black p-5"
-        >
+      <div class="sm:px-10">
+        <table class="table-auto text-center w-full border-collapse">
           <thead
-            class="font-semibold bg-stone-500 border-2 border-blue-600 p-5"
+            class="text-xl font-semibold bg-stone-800 text-white border-2 border-black"
           >
-            <tr class="border">
+            <tr class="">
               <td class="border">Sl.No</td>
               <td class="border">Course Title</td>
               <td class="border">Course Length</td>
@@ -151,30 +157,127 @@
               <td class="border">Actions</td>
             </tr>
           </thead>
-          <tbody class="border-black border-2">
-            <tr class="border">
-              <td class="border">1</td>
-              <td class="border">JavaScript</td>
-              <td class="border">2hrs</td>
-              <td class="border">Video</td>
-              <td class="border">Mr. Anbu Selvan</td>
-              <td class="border">img</td>
-              <td class="border"><button>Delete</button></td>
+          <tbody class="border-black">
+            <tr class="border-2 bg-baby hover:bg-hover">
+              <td class="border border-black">1</td>
+              <td class="border border-black">JavaScript</td>
+              <td class="border border-black">2hrs</td>
+              <td class="border border-black">Video</td>
+              <td class="border border-black">Mr. Anbu Selvan</td>
+              <td class="border border-black">img</td>
+              <td class="border border-black">
+                <div class="flex justify-center space-x-4">
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M14 22v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55q0 .275-.1.563t-.325.512l-5.5 5.5zm7.5-6.575l-.925-.925zm-6 5.075h.95l3.025-3.05l-.45-.475l-.475-.45l-3.05 3.025zM6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h8l6 6v3h-2V9h-5V4H6v16h6v2zm13.025-5.025l-.475-.45l.925.925z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12l1.41 1.41L13.41 14l2.12 2.12l-1.41 1.41L12 15.41l-2.12 2.12l-1.41-1.41L10.59 14zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </td>
             </tr>
-            <tr class="border">
-              <td class="border">1</td>
-              <td class="border">JavaScript</td>
-              <td class="border">2hrs</td>
-              <td class="border">Video</td>
-              <td class="border">Mr. Anbu Selvan</td>
-              <td class="border">img</td>
-              <td class="border"><button>Delete</button></td>
+            <tr class="border-2 bg-baby hover:bg-hover">
+              <td class="border border-black">2</td>
+              <td class="border border-black">JS</td>
+              <td class="border border-black">2hrs</td>
+              <td class="border border-black">Video</td>
+              <td class="border border-black">Mr. Anbu Selvan</td>
+              <td class="border border-black">img</td>
+              <td class="border border-black">
+                <div class="flex justify-center space-x-4">
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M14 22v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55q0 .275-.1.563t-.325.512l-5.5 5.5zm7.5-6.575l-.925-.925zm-6 5.075h.95l3.025-3.05l-.45-.475l-.475-.45l-3.05 3.025zM6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h8l6 6v3h-2V9h-5V4H6v16h6v2zm13.025-5.025l-.475-.45l.925.925z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12l1.41 1.41L13.41 14l2.12 2.12l-1.41 1.41L12 15.41l-2.12 2.12l-1.41-1.41L10.59 14zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-2 bg-baby hover:bg-hover">
+              <td class="border border-black">1</td>
+              <td class="border border-black">JavaScript</td>
+              <td class="border border-black">2hrs</td>
+              <td class="border border-black">Video</td>
+              <td class="border border-black">Mr. Anbu Selvan</td>
+              <td class="border border-black">img</td>
+              <td class="border border-black">
+                <div class="flex justify-center space-x-4">
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M14 22v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55q0 .275-.1.563t-.325.512l-5.5 5.5zm7.5-6.575l-.925-.925zm-6 5.075h.95l3.025-3.05l-.45-.475l-.475-.45l-3.05 3.025zM6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h8l6 6v3h-2V9h-5V4H6v16h6v2zm13.025-5.025l-.475-.45l.925.925z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12l1.41 1.41L13.41 14l2.12 2.12l-1.41 1.41L12 15.41l-2.12 2.12l-1.41-1.41L10.59 14zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>
-      </div> -->
+      </div>
     </main>
 
-    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/validation.js"></script>
+    <!-- <script type="module" src="./assets/js/main.js"></script> -->
   </body>
 </html>

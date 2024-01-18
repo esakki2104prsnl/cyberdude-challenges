@@ -17,3 +17,7 @@
 .invalid {
   @apply border-2 border-red-600 bg-red-100;
 }
+
+.border{
+  @apply p-2
+}
