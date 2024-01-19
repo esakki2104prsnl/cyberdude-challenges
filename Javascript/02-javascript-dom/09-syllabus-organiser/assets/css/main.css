@@ -21,3 +21,7 @@
 .border{
   @apply p-2
 }
+
+.td-style{
+  @apply border-2 bg-baby hover:bg-hover
+}
