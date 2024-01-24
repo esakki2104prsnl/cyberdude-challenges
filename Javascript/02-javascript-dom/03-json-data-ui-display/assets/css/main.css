@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .li-card {
-  @apply bg-gray-400 flex rounded-md p-2 m-2;
+  @apply bg-gray-300 flex rounded-md p-2 m-10 shadow-xl hover:bg-gray-400 ;
 }
 
 .div-class {
@@ -12,7 +11,7 @@
 }
 
 .span1 {
-  @apply text-sm;
+  @apply text-sm text-gray-800;
 }
 
 .span2 {
