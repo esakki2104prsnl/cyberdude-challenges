@@ -6,3 +6,7 @@
 .nav {
   @apply font-bold text-lg  text-black transition duration-300;
 }
+
+.about-div {
+  @apply p-2 rounded-md mt-4 flex items-center w-fit space-x-3 hover:underline hover:cursor-pointer;
+}

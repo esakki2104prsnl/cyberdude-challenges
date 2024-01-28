@@ -1,17 +1,12 @@
 import { Outlet } from "react-router-dom";
 import TheNavBar from "../components/TheNavBar";
-import Home from "../pages/Home";
-import Image from "../pages/Image";
+
 
 const Guest = () => {
   return (
-    <div>
-      <TheNavBar />
-      <div className="flex">
-        <Home />
-        <Image />
-      </div>
+    <div className="bg-gradient-to-tr via-gray-50 from-blue-600 to-pink-600 max-h-full">
       <div>
+      <TheNavBar />
         <Outlet />
       </div>
     </div>
