@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className=" p-5 flex-row space-y-20 rounded mx-auto my-16 text-center text-gray-900 font-semibold text-xl  max-w-xl h-screen  bg-[url('https://img.freepik.com/free-photo/social-media-concept-with-smartphone_52683-100042.jpg')] bg-no-repeat ">
+    <div className=" p-5  flex-row space-y-20 rounded mx-5  sm:mx-auto sm:my-16 text-center text-gray-900 font-semibold text-xl  max-w-xl  sm:h-screen  bg-[url('https://img.freepik.com/free-photo/social-media-concept-with-smartphone_52683-100042.jpg')] bg-no-repeat ">
       {/* Mail */}
       <h1 className="underline text-black font-bold pb-5">
         My Social Media Links

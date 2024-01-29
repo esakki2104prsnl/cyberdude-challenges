@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 .nav {
-  @apply font-bold text-lg  text-black transition duration-300;
+  @apply font-bold  sm:text-lg  text-black transition duration-300;
 }
 
 .about-div {
-  @apply p-2 rounded-md mt-4 flex items-center w-fit space-x-3 hover:underline hover:cursor-pointer;
+  @apply p-2 rounded-md mt-1 sm:mt-4 flex items-center w-fit space-x-1 sm:space-x-3 hover:underline hover:cursor-pointer;
 }

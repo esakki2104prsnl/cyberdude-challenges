@@ -2,8 +2,8 @@
 
 const Home = () => {
   return (
-    <div className="px-10 mx-auto text-center h-screen">
-      <div className="mt-44 font-bold text-4xl flex justify-center items-end space-x-3">
+    <div className="px-5 sm:px-10 mx-auto text-center ">
+      <div className="sm:mt-44 font-bold text-sm sm:text-4xl flex justify-center items-end space-x-3">
         <h1>Hey</h1>
         <img
           src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
@@ -11,7 +11,7 @@ const Home = () => {
           className="drop-shadow-xl"
         ></img>
         <span> I'm </span>
-        <span className="font-dance text-5xl">ESAKKI M</span>
+        <span className="font-dance text-xl sm:text-5xl">ESAKKI M</span>
         <span>from Tirunelveli</span>
       </div>
       <div className="pt-3">

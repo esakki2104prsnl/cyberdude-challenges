@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: (
-          <div className="flex h-[600px]">
+          <div className="sm:flex h-[600px] ">
             <Home />
             <Image />
           </div>

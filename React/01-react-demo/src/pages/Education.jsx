@@ -6,7 +6,7 @@ const Education = () => {
       title: "Francis Xavier Engineering College",
       location: "📍 Vannerpettai, Tirunelveli",
       degree: "Bachelor of Engineering",
-      department: "Mechainical Engineering",
+      department: "Mechanical Engineering",
       percentage: "8.24 CGPA",
       img: "https://i.ytimg.com/vi/HDrhm3ys_oo/maxresdefault.jpg",
       year: "2020 - 2023",
@@ -16,7 +16,7 @@ const Education = () => {
       title: "FX Polytechinic College",
       location: "📍 Tharuvai",
       degree: "Diploma",
-      department: "Mechainical Engineering",
+      department: "Mechanical Engineering",
       percentage: "84%",
       img: "https://images.jdmagicbox.com/comp/tirunelveli/54/0462p462std1300154/catalogue/f-x-polytechnic-college-munnirpallam-tirunelveli-dhmgi.jpg",
       year: "2017 - 2020",
@@ -37,21 +37,21 @@ const Education = () => {
   const eduDataTemplate = educationData.map(
     ({ title, location, degree, department, percentage, img, year }) => {
       return (
-        <div className="bg-zinc-300 mt-3 rounded-lg flex items-center  shadow-xl hover:bg-gray-400">
+        <div className="bg-zinc-300 mt-3 mx-5 rounded-lg flex items-center  shadow-xl hover:bg-gray-400">
           <img
             src={img}
             alt="school"
-            className="w-[280px] h-[200px] rounded-lg p-4"
+            className="w-[140px] h-[100px] sm:w-[280px] sm:h-[200px] rounded-lg p-4"
           />
-          <div className="items-center flex-1 px-2 my-auto">
-            <h1 className="font-bold text-xl ">
+          <div className="items-center flex-1 p-1 sm:px-2 my-auto">
+            <h1 className="font-bold text-sm sm:text-xl ">
               {degree}
-              <span className="text-sm font-thin pl-2">{year}</span>
+              <span className=" text-xs sm:text-sm font-thin pl-2">{year}</span>
             </h1>
-            <span className="font-semibold text-lg">{department} -</span>
-            <span className="font-semibold text-lg"> ({percentage})</span>
-            <h1 className="font-semibold text-xl ">{title}</h1>
-            <span className="text-lg "> {location}</span>
+            <span className="font-semibold text-sm sm:text-lg">{department} -</span>
+            <span className="font-semibold text-xs sm:text-lg"> ({percentage})</span>
+            <h1 className="font-semibold text-sm sm:text-xl ">{title}</h1>
+            <span className="text-sm sm:text-lg"> {location}</span>
           </div>
         </div>
       );

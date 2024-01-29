@@ -7,7 +7,7 @@ const Image = () => {
       <img
         src={img}
         alt="esakki image"
-        className="object-fill w-60 scale-150"
+        className="object-fill w-60 scale-125 sm:scale-150"
       />
       <div className="bg-gray-400 w-[180px] p-1 text-center  float-right z-20 relative rounded-md shadow-black shadow-xl">
         <a
