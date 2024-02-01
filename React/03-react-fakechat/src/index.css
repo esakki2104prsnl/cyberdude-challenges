@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-design {
+  @apply block w-full outline-none mt-2 rounded bg-stone-600 text-white p-2;
+}
+
+.label-design{
+    @apply font-semibold text-lg
+}
