@@ -11,24 +11,22 @@ const Hero = () => {
       );
       const newsJSON = await fetchedNewsData.json();
       setNews(newsJSON.articles);
-      console.log(newsJSON);
     };
     fetchNews();
   }, []);
 
   const blogPostByTemplate = news.map((data, index) => {
     const {
-      name,
+      source: { name },
       author,
       title,
       description,
       url,
       urlToImage,
       publishedAt,
-      id,
     } = data;
     return (
-      <div key={index+1}>
+      <div key={index + 1}>
         <div className="bg-[#817263d2] m-10 p-3 sm:flex items-center shadow-xl z-10 shadow-black rounded-md hover:bg-cardHover">
           <img
             src={urlToImage}
@@ -42,19 +40,19 @@ const Hero = () => {
               <h3>
                 Name: <span className="font-semibold ">{name}</span>
               </h3>
-              <span>-{author}</span>
+              <span>Author -{author}</span>
             </div>
             <div>
-              <h1 className="font-bold">
+              <h1 className="font-bold space-x-1">
                 <span className="Underline text-xl text-slate-900  capitalize">
-                  title:
+                  Title:
                 </span>
                 {title}
               </h1>
               <p className="mt-1">{description}</p>
             </div>
 
-            <div className=" p-2 float-right flex items-center space-x-1 text-center invisible sm:visible bg-blue-500 rounded text-white  font-bold">
+            <div className=" p-2 float-right flex items-center space-x-1 text-center shadow-md invisible sm:visible bg-blue-500 rounded text-white  font-bold">
               <Link to={url} target="_blank">
                 To Know More
               </Link>
