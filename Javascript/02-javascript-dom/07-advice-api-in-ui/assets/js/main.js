@@ -6,7 +6,7 @@ console.log(adviceEl);
 
 
 const adviceUrl = "https://api.adviceslip.com/advice";
-console.log(adviceUrl);
+// console.log(adviceUrl);
 
 
 
@@ -25,7 +25,7 @@ async function getAdviceData() {
     }
 }
 const adviceData = await getAdviceData()
-console.log(adviceData);
+// console.log(adviceData);
 
 
 // refreshBtnEl.className = "btn"

@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "/cyberdude-challenges/",
+    // base: "/cyberdude-challenges/",
     //   build: {
     //     rollupOptions: {
     //       input: {

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .main {
-  @apply h-screen px-5;
+  @apply h-screen px-5 mt-5;
 }
 
 .h1 {
@@ -12,10 +12,10 @@
 }
 
 .user-card {
-  @apply p-5 flex flex-col  items-center bg-white w-[280px] sm:w-[300px]  shadow-sm hover:shadow-blue-600/50 hover:shadow-2xl rounded-lg bg-opacity-10;
+  @apply p-5  flex flex-col   items-center bg-white w-[280px] sm:w-[300px]  shadow-sm hover:shadow-blue-600/50 hover:shadow-2xl rounded-lg bg-opacity-10;
 }
 .username {
-  @apply font-bold mt-5 text-xl text-blue-500;
+  @apply font-bold mt-5 text-xl text-white;
 }
 .img {
   @apply w-[150px] h-[150px] rounded-2xl;
