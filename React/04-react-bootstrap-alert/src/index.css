@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collapse {
+  @apply flex items-center justify-between p-1.5   hover:bg-gray-300  hover:bg-opacity-20 hover:rounded-md cursor-pointer;
+}
+
+.collapse-li {
+  @apply p-1.5 hover:bg-gray-300  hover:bg-opacity-5 hover:rounded-md cursor-pointer;
+}

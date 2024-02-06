@@ -1,0 +1,28 @@
+import { useState } from "react";
+import TheNavBar from "./components/TheNavBar";
+import Alert from "./pages/Alert";
+import LeftList from "./pages/LeftList";
+import Button from "./pages/Button";
+
+function App() {
+  // const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <div>
+        <TheNavBar />
+        <div className="flex  pt-20 bg-body min-h-screen">
+          <LeftList />
+          <div className="flex-1 max-w-4xl">
+            <Alert />
+          </div>
+          <div className="w-60">
+            <Button />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default App;

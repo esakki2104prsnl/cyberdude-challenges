@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started",
+    "collapse": {
+      "list1": "Introduction",
+      "list2": "Why React-Bootstrap",
+      "list3": "Theming",
+      "list4": "Color modes",
+      "list5": "Getting help",
+      "list6": "RTL",
+      "list7": "Server-side Rendering"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Layout",
+    "collapse": {
+      "list1": "Breakpoints",
+      "list2": "Grid",
+      "list3": "Stacks",
+      "list4": null,
+      "list5": null,
+      "list6": null,
+      "list7": null
+    }
+  },
+  {
+    "id": 3,
+    "title": "Forms",
+    "collapse": {
+      "list1": "Overview",
+      "list2": "Form controls",
+      "list3": "Form text",
+      "list4": "Select",
+      "list5": "Checking and radios",
+      "list6": "Range",
+      "list7": "Input Group"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Components",
+    "collapse": {
+      "list1": "Accordion",
+      "list2": "Alerts",
+      "list3": "Badges",
+      "list4": "Breadcrumbs",
+      "list5": "Button group",
+      "list6": "Buttons",
+      "list7": "Cards"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Utilities",
+    "collapse": {
+      "list1": "Transitions",
+      "list2": "Ratios",
+      "list3": "@restart/ui",
+      "list4": null,
+      "list5": null,
+      "list6": null,
+      "list7": null
+    }
+  },
+  {
+    "id": 6,
+    "title": "Migrating",
+    "collapse": {
+      "list1": null,
+      "list2": null,
+      "list3": null,
+      "list4": null,
+      "list5": null,
+      "list6": null,
+      "list7": null
+    }
+  },
+  {
+    "id": 7,
+    "title": "About",
+    "collapse": {
+      "list1": null,
+      "list2": null,
+      "list3": null,
+      "list4": null,
+      "list5": null,
+      "list6": null,
+      "list7": null
+    }
+  }
+]
