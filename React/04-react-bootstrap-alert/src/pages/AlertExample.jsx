@@ -39,7 +39,7 @@ function AlertExample({ title }) {
       text: "text-sky-200",
     },
     {
-      key: "info",
+      key: "infomation",
       border: "border-gray-800",
       bg: "bg-gray-200",
       text: "text-white",

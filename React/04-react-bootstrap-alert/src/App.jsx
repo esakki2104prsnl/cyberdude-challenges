@@ -3,6 +3,7 @@ import TheNavBar from "./components/TheNavBar";
 import Alert from "./pages/Alert";
 import LeftList from "./pages/LeftList";
 import Button from "./pages/Button";
+import Nav from "./pages/Nav";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -10,13 +11,16 @@ function App() {
   return (
     <>
       <div>
-        <TheNavBar />
-        <div className="flex  pt-20 bg-body min-h-screen">
-          <LeftList />
+        <Nav />
+        {/* <TheNavBar /> */}
+        <div className="flex-row   sm:flex sm:pt-20 bg-body min-h-screen">
+          <div className="invisible sm:visible">
+            <LeftList />
+          </div>
           <div className="flex-1 max-w-4xl">
             <Alert />
           </div>
-          <div className="w-60">
+          <div className="sm:w-60">
             <Button />
           </div>
         </div>
