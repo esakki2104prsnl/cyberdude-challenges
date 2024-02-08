@@ -1,9 +1,8 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
-import { Route, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {  RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Guest from "./layout/Guest";
 import Home from "./pages/Home";
@@ -13,6 +12,7 @@ import Education from "./pages/Education";
 import Achievement from "./pages/Achievement";
 import Certificate from "./pages/Certificate";
 import ErrorPage from "./pages/ErrorPage";
+import ContactPage from "./pages/ContactPage";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/certificate",
         element: <Certificate />,
+      },
+      {
+        path: "/contact",
+        element: <ContactPage />,
       },
     ],
     errorElement: <ErrorPage />,
