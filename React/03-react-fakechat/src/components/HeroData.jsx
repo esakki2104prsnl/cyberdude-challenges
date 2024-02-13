@@ -123,7 +123,7 @@ const HeroData = () => {
                 </label>
                 <input
                   // defaultValue={"50"}
-                  onClick={setBatteryMethod}
+                  onChange={setBatteryMethod}
                   type="text"
                   name="battery"
                   id="battery"

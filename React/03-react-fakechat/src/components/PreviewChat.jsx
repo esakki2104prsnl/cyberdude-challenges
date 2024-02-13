@@ -1,4 +1,4 @@
-const previewChat = (props) => {
+const previewChat = () => {
   return (
     <div className="pt-5">
       <div className="text-center p-2  bg-white opacity-90 w-fit mx-auto rounded shadow-lg">
@@ -155,9 +155,9 @@ const previewChat = (props) => {
                 >
                   <g
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   >
                     <path d="M0 0h24v24H0z"></path>
                     <path
