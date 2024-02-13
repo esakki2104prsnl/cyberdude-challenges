@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const TheNavBar = () => {
   return (
     <div>
-      <div className="mx-36 sm:mx-auto sm:flex sm:items-center justify-between px-2 sm:px-14 py-3">
+      <div className=" mx-36 sm:mx-auto sm:flex sm:items-center justify-between px-2 sm:px-14 py-3 ">
         <div className="text-center flex items-center p-2">
           <img
             src="https://cdn-icons-png.flaticon.com/512/4922/4922057.png"
@@ -35,8 +35,8 @@ const TheNavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/achievement" className="nav group">
-                Achievement
+              <Link to="/project" className="nav group">
+                Project
                 <span className="block max-w-0  transition-all duration-700  h-1 bg-black group-hover:max-w-full"></span>
               </Link>
             </li>

@@ -11,8 +11,8 @@ const Home = () => {
             width="5%"
             className="drop-shadow-xl"
           ></img>
-          <span> I'm </span>
-          <span className="font-dance text-xl sm:text-5xl">ESAKKI M</span>
+          <span> I&apos;m </span>
+          <span className="font-dance text-xl sm:text-4xl">ESAKKI M</span>
           <span>from Tirunelveli</span>
         </div>
         <div className="sm:pt-3">
@@ -21,7 +21,7 @@ const Home = () => {
           </span>
           <span className="sm:pl-2  mt-2 font-semibold">
             To get an opportunity that allows me to showcase my skills and
-            contribute to the <br /> company's growth and to seek a position in
+            contribute to the <br /> company&apos;s growth and to seek a position in
             a company that can launch my career <br /> and help me to build a
             stronger skill set.
           </span>

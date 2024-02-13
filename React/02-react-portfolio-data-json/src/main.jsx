@@ -2,17 +2,17 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
-import {  RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Guest from "./layout/Guest";
 import Home from "./pages/Home";
 import Image from "./pages/Image";
 import About from "./pages/About";
 import Education from "./pages/Education";
-import Achievement from "./pages/Achievement";
 import Certificate from "./pages/Certificate";
 import ErrorPage from "./pages/ErrorPage";
 import ContactPage from "./pages/ContactPage";
+import ProjectPage from "./pages/ProjectPage";
 
 const router = createBrowserRouter([
   {
@@ -37,12 +37,8 @@ const router = createBrowserRouter([
         element: <Education />,
       },
       {
-        path: "/achievement",
-        element: <Achievement />,
-      },
-      {
-        path: "/achievement/:dynamic",
-        element: <Achievement />,
+        path: "/project",
+        element: <ProjectPage />,
       },
       {
         path: "/certificate",
