@@ -1,0 +1,23 @@
+{
+  "name": "01-dynamic-folders-datas",
+  "version": "1.0.0",
+  "description": "create a file with the spot I like to go within that places.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esakki2104prsnl/cyberdude-challenges.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "dynamic-folders"
+  ],
+  "author": "Esakki M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esakki2104prsnl/cyberdude-challenges/issues"
+  },
+  "homepage": "https://github.com/esakki2104prsnl/cyberdude-challenges#readme"
+}
