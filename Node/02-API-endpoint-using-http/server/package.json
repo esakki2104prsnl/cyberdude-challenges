@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Creating CyberDude Networks interns data and Displaying in ReactJS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esakki2104prsnl/cyberdude-challenges.git"
+  },
+  "keywords": [
+    "CyberDude_Interns",
+    "NodeJS",
+    "endpoint",
+    "data"
+  ],
+  "author": "Esakki M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esakki2104prsnl/cyberdude-challenges/issues"
+  },
+  "homepage": "https://github.com/esakki2104prsnl/cyberdude-challenges#readme"
+}
