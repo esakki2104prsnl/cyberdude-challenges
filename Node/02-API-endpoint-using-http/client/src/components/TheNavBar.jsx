@@ -29,7 +29,7 @@ const TheNavBar = () => {
               </svg>
             </a>
             <a
-              href="https://github.com/esakki2104prsnl/cyberdude-challenges/tree/master/node/02-API-endpoint-using-http/"
+              href="https://github.com/esakki2104prsnl/cyberdude-challenges/tree/master/Node/02-API-endpoint-using-http/"
               target="_blank"
               rel="noreferrer"
             >
