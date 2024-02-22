@@ -55,14 +55,16 @@ function ButtonExample() {
   const result = variants.map(({ key, bg, bgHover }) => {
     // console.log(variant);
     return (
-      <div className="pb-2 mx-14 my-2 px-32 sm:px-0">
-        <button
-          className={`flex flex-row w-28  ${bg} p-2  rounded-lg text-white ${bgHover} `}
-          key={key}
-        >
-          <div className="mx-auto font-semibold">{key}</div>
-        </button>
-      </div>
+      <>
+        <div className="pb-2 mx-14 my-2 px-32 sm:px-0">
+          <button
+            className={`flex flex-row w-28  ${bg} p-2  rounded-lg text-white ${bgHover} `}
+            key={key}
+          >
+            <div className="mx-auto font-semibold">{key}</div>
+          </button>
+        </div>
+      </>
     );
   });
   return <>{result}</>;

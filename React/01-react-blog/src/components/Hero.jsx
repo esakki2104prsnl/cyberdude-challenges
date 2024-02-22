@@ -43,16 +43,16 @@ const Hero = () => {
               <span>Author -{author}</span>
             </div>
             <div>
-              <h1 className="font-bold space-x-1">
-                <span className="Underline text-xl text-slate-900  capitalize">
+              <div className="font-bold space-x-1 flex items-center">
+                <h1 className="Underline text-xl text-slate-900  capitalize">
                   Title:
-                </span>
-                {title}
-              </h1>
-              <p className="mt-1">{description}</p>
+                </h1>
+                <p>{title}</p>
+              </div>
+              <p className="mt-1 pl-1">{description}</p>
             </div>
 
-            <div className=" p-2 float-right flex items-center space-x-1 text-center shadow-md invisible sm:visible bg-blue-500 rounded text-white  font-bold">
+            <div className=" p-2 float-right flex items-center space-x-1 text-center shadow-md invisible sm:visible bg-blue-500 hover:bg-blue-700 rounded text-white  font-bold">
               <Link to={url} target="_blank">
                 To Know More
               </Link>

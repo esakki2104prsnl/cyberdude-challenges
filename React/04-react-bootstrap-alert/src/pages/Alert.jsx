@@ -1,4 +1,3 @@
-import React from "react";
 import AlertResults from "./AlertResults";
 
 const Alert = () => {

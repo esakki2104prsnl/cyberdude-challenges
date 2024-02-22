@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 function AlertExample({ title }) {
   const variants = [
@@ -66,5 +66,9 @@ function AlertExample({ title }) {
   });
   return <>{result}</>;
 }
+
+AlertExample.propTypes = {
+  title: PropTypes.string,
+};
 
 export default AlertExample;
