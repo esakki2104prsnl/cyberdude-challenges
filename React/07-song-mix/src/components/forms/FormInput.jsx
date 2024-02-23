@@ -10,7 +10,7 @@ const FormInput = ({
 }) => {
   return (
     <div className="space-y-2 p-2">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <label
           className={
             error ? "font-semibold text-red-400" : "font-semibold text-white"

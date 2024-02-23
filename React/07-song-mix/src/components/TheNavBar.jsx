@@ -33,7 +33,7 @@ const TheNavBar = () => {
               width="2em"
               height="2em"
               viewBox="0 0 24 24"
-              className="text-black hover:text-sky-500 hover:bg-black hover:rounded cursor-pointer duration-300"
+              className="text-black hover:text-sky-500 hover:bg-black hover:rounded cursor-pointer "
             >
               <path
                 fill="currentColor"
