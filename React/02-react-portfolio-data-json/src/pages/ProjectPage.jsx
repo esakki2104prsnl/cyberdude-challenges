@@ -32,7 +32,7 @@ const ProjectPage = () => {
             JavaScript DOM Projects
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 ">
           {/* Row 1 */}
           {/* 01-form-validation */}
           <div className="mx-auto my-2">
@@ -517,7 +517,7 @@ const ProjectPage = () => {
             React JS Projects
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 ">
           {/* row 1 */}
           {/* Portfolio */}
           <div className="mx-auto my-2">
